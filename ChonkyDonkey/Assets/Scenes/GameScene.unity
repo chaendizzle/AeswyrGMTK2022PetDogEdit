@@ -4595,6 +4595,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 519131104, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -69.083496
+      objectReference: {fileID: 0}
+    - target: {fileID: 519131104, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.110199
+      objectReference: {fileID: 0}
     - target: {fileID: 2071354481, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4681,7 +4689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2187115209294381093, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -226.76663
+      value: -226.7666
       objectReference: {fileID: 0}
     - target: {fileID: 4095313642435611877, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
       propertyPath: CharacterSprites.Array.data[0].Angry
@@ -4809,7 +4817,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 4250740957004600529, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013276838199390452, guid: e2043e27184bc4d33ba216973cf70696, type: 3}
       propertyPath: m_Alpha
