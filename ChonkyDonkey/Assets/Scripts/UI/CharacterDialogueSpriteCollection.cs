@@ -5,12 +5,12 @@ using UnityEngine;
 public struct CharacterDialogueSpriteCollection
 {
     public PetId Character;
-    public Sprite Default;
-    public Sprite Happy;
-    public Sprite Angry;
+    public GameObject Default;
+    public GameObject Happy;
+    public GameObject Angry;
     public AudioClip Bark;
 
-    public Sprite Get(DogReactionType reactionType)
+    public GameObject Get(DogReactionType reactionType)
     {
         switch (reactionType)
         {

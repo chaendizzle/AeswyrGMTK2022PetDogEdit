@@ -79,7 +79,7 @@ public class DialogueOverlayUI : MonoBehaviour
         Controller.SetBool(IsShowing, true);
 
         // set the character sprite
-        CharacterIcon.sprite = GetSprites(pet).Get(reactionType);
+        SetCharacterIcon(GetSprites(pet).Get(reactionType));
         // bounce
         Controller.SetTrigger(CharacterChanged);
 
@@ -113,6 +113,19 @@ public class DialogueOverlayUI : MonoBehaviour
         {
             return CharacterSprites.Length > 0 ? CharacterSprites[0] : default;
         }
+    }
+
+    private void SetCharacterIcon(GameObject prefab)
+    {
+        // destroy old if it exists
+        foreach (Transform child in CharacterIcon.transform)
+        {
+            Destroy(child);
+        }
+        // scale to UI component
+        GameObject go = Instantiate(prefab);
+        PetDog petdog = go.GetComponent<PetDog>();
+        petdog.ScaleToUI(CharacterIcon.gameObject);
     }
 
     private void Update()

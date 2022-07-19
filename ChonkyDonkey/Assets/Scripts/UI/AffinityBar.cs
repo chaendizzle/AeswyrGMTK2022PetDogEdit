@@ -52,6 +52,11 @@ public class AffinityBar : MonoBehaviour
         return currentDogTag;
     }
 
+    public void ShowThisDogsAffinityEvent(int dogTag)
+    {
+        ShowThisDogsAffinity(dogTag);
+    }
+
     // call this from the interactable GO when starting a conversation with a dog
     public int ShowThisDogsAffinity(int dogTag)
     {

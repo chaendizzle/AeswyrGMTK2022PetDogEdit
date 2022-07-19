@@ -12,6 +12,10 @@ public class Interactable : MonoBehaviour
         transform.parent.TryGetComponent<SpriteRenderer>(out sprite);
     }
     public void Run() {
+        for (int i = 0; i < action.GetPersistentEventCount(); i++)
+        {
+            Debug.Log(action.GetPersistentMethodName(i));
+        }
         action.Invoke();
     }
 
